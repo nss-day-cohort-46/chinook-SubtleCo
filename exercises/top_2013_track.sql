@@ -3,6 +3,8 @@
 With TrackCounts AS (
     Select SUM(InvoiceLineId) TotalSales, TrackId
     FROM InvoiceLine
+    JOIN Invoice i ON i.InvoiceId = InvoiceLine.InvoiceId
+    WHERE i.InvoiceDate like "%2013%"
     GROUP BY TrackId
 )
 
