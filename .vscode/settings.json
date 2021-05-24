@@ -4,7 +4,7 @@
             "previewLimit": 50,
             "driver": "SQLite",
             "name": "Chinook_db",
-            "database": "${workspaceFolder:chinook}/Chinook_Sqlite.sqlite"
+            "database": "${workspaceFolder:chinook-SubtleCo}/Chinook_Sqlite.sqlite"
         }
     ]
 }
