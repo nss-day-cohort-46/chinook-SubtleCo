@@ -1,7 +1,7 @@
 -- Most purchased track in 2013
 
 With TrackCounts AS (
-    Select SUM(InvoiceLineId) TotalSales, TrackId
+    Select COUNT(InvoiceLineId) TotalSales, TrackId
     FROM InvoiceLine
     JOIN Invoice i ON i.InvoiceId = InvoiceLine.InvoiceId
     WHERE i.InvoiceDate like "%2013%"

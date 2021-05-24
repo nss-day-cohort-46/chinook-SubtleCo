@@ -1,5 +1,5 @@
 With TrackCounts AS (
-    Select SUM(InvoiceLineId) TotalSales, TrackId
+    Select COUNT(InvoiceLineId) TotalSales, TrackId
     FROM InvoiceLine
     GROUP BY TrackId
 )

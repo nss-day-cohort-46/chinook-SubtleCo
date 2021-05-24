@@ -1,6 +1,6 @@
 -- most purchased media type
 With TrackCounts AS (
-    Select SUM(InvoiceLineId) TotalSales,
+    Select COUNT(InvoiceLineId) TotalSales,
         TrackId
     FROM InvoiceLine
     GROUP BY TrackId
