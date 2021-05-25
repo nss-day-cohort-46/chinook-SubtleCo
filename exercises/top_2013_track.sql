@@ -1,5 +1,3 @@
--- Most purchased track in 2013
-
 With TrackCounts AS (
     Select COUNT(InvoiceLineId) TotalSales, TrackId
     FROM InvoiceLine

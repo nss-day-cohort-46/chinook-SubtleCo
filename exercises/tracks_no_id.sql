@@ -1,5 +1,3 @@
--- Track.Name, Album.Title, Genre.Name, MediaType.Name
-
 SELECT Track.Name "Title", Album.Title "Album", Genre.Name "Genre", MediaType.Name "Media Type"
 FROM Track
 JOIN Album on Album.AlbumId = Track.AlbumId

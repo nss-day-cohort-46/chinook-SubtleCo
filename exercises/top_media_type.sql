@@ -1,4 +1,3 @@
--- most purchased media type
 With TrackCounts AS (
     Select COUNT(InvoiceLineId) TotalSales,
         TrackId
